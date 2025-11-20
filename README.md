@@ -1,73 +1,60 @@
-# React + TypeScript + Vite
+# 🌿 HealthNav - Personalized AI Health Navigator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**HealthNav** is an intelligent web application designed to bridge the gap between complex medical data and daily lifestyle choices. Unlike generic health apps, HealthNav uses Artificial Intelligence to interpret blood reports and nutrition labels specifically in the context of the user's individual health profile (e.g., diabetes, hypertension, or specific fitness goals).
 
-Currently, two official plugins are available:
+## 🚀 Key Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* **👤 Smart Profile System:** Collects detailed user data (lifestyle, medical history, dietary preferences) to build a context-layer for all AI analysis.
+* **🩸 Blood Report Analysis:**
+    * Uploads images of medical reports.
+    * Uses **OCR (Tesseract.js)** to extract raw medical data.
+    * Uses **Google Gemini AI** to interpret the results, explain them in plain English, and offer actionable wellness tips based on the user's specific health conditions.
+* **🥗 Intelligent Product Scanner:**
+    * Scans nutrition labels of packaged foods.
+    * Parses nutritional values (Sodium, Sugar, Fats).
+    * **Context-Aware Analysis:** Warns the user if a product conflicts with their health goals (e.g., flagging high sodium for a user with high BP).
+* **💬 AI Health Assistant:** A built-in chatbot powered by Gemini to answer general health queries and explain medical concepts.
+* **📊 Interactive Dashboard:** A central hub to view health stats, past reports, and AI insights.
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **Frontend:** React.js, TypeScript, Vite
+* **Styling:** Tailwind CSS
+* **Backend & Auth:** Firebase (Authentication, Firestore Database)
+* **AI & Machine Learning:**
+    * **Google Gemini API:** For generative text analysis and personalized insights.
+    * **Tesseract.js:** For client-side Optical Character Recognition (OCR).
 
-## Expanding the ESLint configuration
+## 📸 Screenshots
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+*(You can drag and drop screenshots of your Dashboard, Scanner, and Chatbot here after uploading to GitHub)*
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 💻 Getting Started
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Follow these steps to run the project locally:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+1.  **Clone the repository**
+    ```bash
+    git clone [https://github.com/YOUR_USERNAME/health-navigator.git](https://github.com/YOUR_USERNAME/health-navigator.git)
+    ```
+    *(Replace YOUR_USERNAME with your actual GitHub username)*
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2.  **Install dependencies**
+    ```bash
+    npm install
+    ```
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+3.  **Set up Environment Variables**
+    Create a `.env` file in the root directory and add your API keys:
+    ```env
+    VITE_FIREBASE_API_KEY=your_firebase_key_here
+    VITE_GEMINI_API_KEY=your_gemini_key_here
+    ```
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+4.  **Run the development server**
+    ```bash
+    npm run dev
+    ```
+
+---
+*Created by Ballabh Agrawal*

@@ -1,10 +1,10 @@
 
 import { GoogleGenerativeAI, HarmCategory, HarmBlockThreshold } from "@google/generative-ai";
 
-const API_KEY = "AIzaSyC1Ir4xtLyJFtIuqgzTinwIjXbJhfmIE_8"; 
+const API_KEY = import.meta.env.VITE_GEMINI_API_KEY; 
 
 
-if (!API_KEY || API_KEY === "AIzaSyC1Ir4xtLyJFtIuqgzTinwIjXbJhfmIE_8") { 
+if (!API_KEY || API_KEY === import.meta.env.VITE_GEMINI_API_KEY) { 
    console.error("Gemini API Key is missing or is still the placeholder in src/geminiService.ts. Please add your valid key.");
    
 } else {

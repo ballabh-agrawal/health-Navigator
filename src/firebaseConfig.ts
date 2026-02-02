@@ -3,7 +3,7 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAmVQG3GPPAtYBzF8spsAQyJL9E3Y1SVaU",
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
   authDomain: "health-navigator-project.firebaseapp.com",
   projectId: "health-navigator-project",
   storageBucket: "health-navigator-project.firebasestorage.app", 

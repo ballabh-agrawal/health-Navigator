@@ -27,7 +27,15 @@
 
 ## 📸 Screenshots
 
-*(You can drag and drop screenshots of your Dashboard, Scanner, and Chatbot here after uploading to GitHub)*
+
+<img width="1890" height="854" alt="Screenshot 2025-11-21 024455" src="https://github.com/user-attachments/assets/7244be7e-0838-4706-92ab-def5881374ff" />
+<img width="876" height="591" alt="Screenshot 2025-11-21 022629" src="https://github.com/user-attachments/assets/904d649a-e438-47b4-a6fd-5c7ff77418a9" />
+<img width="1219" height="682" alt="Screenshot 2025-11-21 022618" src="https://github.com/user-attachments/assets/8d30c281-9362-430e-861a-a19e790ef6c7" />
+<img width="757" height="834" alt="Screenshot 2025-11-21 024435" src="https://github.com/user-attachments/assets/32182546-62cd-458f-bdef-598a7ceb7597" />
+<img width="1900" height="860" alt="Screenshot 2025-11-21 022554" src="https://github.com/user-attachments/assets/31b6e603-6106-4010-af5d-7d4650956ee6" />
+<img width="1896" height="866" alt="Screenshot 2025-11-21 022538" src="https://github.com/user-attachments/assets/d3557da0-db3c-4315-9b20-2cb14c126e29" />
+<img width="1892" height="857" alt="Screenshot 2025-11-21 022510" src="https://github.com/user-attachments/assets/b42ea76d-b0cf-48ef-b1ba-dddc51f9ca32" />
+<img width="1899" height="864" alt="Screenshot 2025-11-21 022447" src="https://github.com/user-attachments/assets/61b98aa9-59fe-4058-9ee2-84f64283afc5" />
 
 ## 💻 Getting Started
 
